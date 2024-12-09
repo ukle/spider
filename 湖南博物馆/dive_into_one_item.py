@@ -28,7 +28,7 @@ async def dive_into(goto_url):
     description = soup.find_all('p')[0].text
 
     data = [[title, image, description]]
-    file_path = '.\扇面.xlsx'
+    file_path = '扇面.xlsx'
     shanmian_excel_aw(data, file_path)
 
     await browser.close()
